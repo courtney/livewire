@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %title Forage SF - Vendor Connect
+    = stylesheet_link_tag 'reset-min',
+                          'main'
+    = yield :stylesheets
+    = csrf_meta_tag
+  %body
+    = yield  
+    = render :partial => 'layouts/javascripts'

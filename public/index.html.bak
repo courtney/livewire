@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby on Rails: Welcome aboard</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://xdoauthproxy.appspot.com/js/json2.js"></script>
+    <script type="text/javascript" src="http://xdoauthproxy.appspot.com/js/xd-oauth-client.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			// getTwitter();
+			
+			
+			$("#sidebar").ajaxError(function(e, xhr, settings, exception) {
+				$(this).text( 'error in: ' + settings.url + ' \n'+'error:\n' + xhr.responseText );
+				});
+			
+		});
+
+		function postMessage() {			 
+				$.post("/", { "message" : "happy trails"},
+								 function(data) {
+								   alert(data);
+								 }, 
+								 "jsonp");				
+		}
+		function getTwitter() {
+				$.getJSON("https://chemphill:win34m3@convore.com/api/groups/9133/topics.json?callback=?", function(json) {
+				var html = "";
+				var topics = [];
+				console.log(json);
+				
+				$(json.topics).each(function(groups) {
+					$('#twitter').append('<ul><li><h2>' + this.name + ' : ' + this.creator.username + '</h2></li></ul>');
+					$.getJSON("https://chemphill:win34m3@convore.com/api/topics/"+this.id+"/messages.json?callback=?", function(data) {
+						console.log(data);
+						$(data.messages).each(function(groups) {
+							$('#twitter ul').append('<li><div>' + this.date_created + ' : ' + this.message + '</div></li>');
+						});
+					});										
+				});					
+			});				
+		}
+		
+		    </script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="sidebar">
+               
+      </div>
+
+      <div id="content">
+				    <ul id="result"></ul>
+          <h1>Conversations</h1>
+					<div id="twitter"></div>
+					<form action="https://chemphill:win34m3@convore.com/api/topics/21084/messages/create.json" method="post" id="message">
+						<input name="message" value=''/>
+						<input type="submit" value="foo">
+					</form>
+					<input type="button" onclick="postMessage()" value="Post Message">
+
+      </div>
+    </div>
+  </body>
+</html>
