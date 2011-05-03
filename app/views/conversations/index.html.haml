@@ -1,11 +1,17 @@
 
 %div#content
   %img{:src =>'/images/tmp.png'}
-  %h1 Conversations
+  
+  %h1 Conversation Topics
+  
+  %div#sidebar
+    %ul#nav
+    %h3 Message
+    %form{:id=>"message", :method=>"post"}
+      %input{:name=>"message", :value=>""}
+      %input{:type=>"submit", :value=>"CHAT"}
+
+  
   %div#twitter  
 
-  %form{:id=>"message", :method=>"post"}
-    %input{:name=>"message", :value=>""}
-    %input{:type=>"submit", :value=>"foo"}
-
-
+  
