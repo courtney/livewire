@@ -3,7 +3,7 @@ body {
 	color: #685E58;
 }
 
-h1,h3 { 
+h1,h3, h4 { 
 	text-transform: uppercase;
 	font-size: 24px;
 	display: block;	
@@ -16,6 +16,12 @@ h3 {
 	padding: 0;
 	border-bottom: 0;
 	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+	border: none;
+	padding: 0;
 }
 
 #content {
@@ -40,7 +46,7 @@ h3 {
 	border-bottom: 1px solid #fff;
 }
 
-#twitter {
+#twitter, #feeds {
 	border-bottom: 2px solid #685E58;
 	width: 900px;
 	height: 300px;
@@ -51,7 +57,7 @@ h3 {
 #content img {
 	border-bottom: 2px solid #685E58;	
 }
-#twitter ul li {
+#twitter ul li, #feeds ul li {
 	border-bottom: 1px solid #685E58;
 	padding: 10px;
 }
