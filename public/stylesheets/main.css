@@ -1,0 +1,41 @@
+body {
+	font-family: 'Oswald',"Arial Narrow",Arial,Helvetica,sans-serif;
+	color: #685E58;
+}
+
+h1 { 
+	text-transform: upppercase;
+	font-size: 24px;
+}
+#content {
+	width: 1125px;
+	margin: 30px auto;	
+}
+
+#nav {
+	float: left;
+}
+
+#twitter {
+	border-bottom: 2px solid #685E58;
+	width: 900px;
+	height: 300px;
+	overflow: auto;
+	float: right;
+}
+
+#content img {
+	border-bottom: 2px solid #685E58;	
+}
+#twitter ul li {
+	border-bottom: 1px solid #685E58;
+	padding: 10px;
+}
+
+form {
+	margin: 10px 0;
+}
+
+form input {
+	border: 1px solid #685E58;
+}
