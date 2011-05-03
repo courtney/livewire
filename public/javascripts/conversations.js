@@ -1,37 +1,36 @@
 $(document).ready(function() {
-	// getConversations();
-	$.getJSON("http://localhost:3000/topics", function(json) {
-		var html = "";
-		var topics = [];
-		console.log(json);
-	});
-	$("#sidebar").ajaxError(function(e, xhr, settings, exception) {
-		$(this).text( 'error in: ' + settings.url + ' \n'+'error:\n' + xhr.responseText );
-		});
-	
+	getConversations();	
+	$('#message').submit(postMessage);
 });
 
-function postMessage() {			 
-		$.post("/", { "message" : "happy trails"},
-						 function(data) {
-						   alert(data);
-						 }, 
-						 "jsonp");				
+function postMessage(data) {
+		var msg = $(data.target).find('input:first').val();
+		$.post("/message", { message: msg } );
+		$('#twitter ul').append('<li><div>' + msg + '</div></li>');			
+		// getConversations();		
+		return false;
 }
+
 function getConversations() {
-		$.getJSON("https://chemphill:win34m3@convore.com/api/groups/9133/topics.json?callback=?", function(json) {
-		var html = "";
-		var topics = [];
-		console.log(json);
-		
-		$(json.topics).each(function(groups) {
-			$('#twitter').append('<ul><li><h2>' + this.name + ' : ' + this.creator.username + '</h2></li></ul>');
-			$.getJSON("https://chemphill:win34m3@convore.com/api/topics/"+this.id+"/messages.json?callback=?", function(data) {
+	$('#twitter').append('<ul>');
+		// $.getJSON("/topics", function(json) {
+		// var html = "";
+		// var topics = [];
+		// 
+		// $(json.topics).each(function(groups) {
+		// 	$('#twitter').append('<ul><li><h2>' + this.name + ' : ' + this.creator.username + ' : '+ this.id+'</h2></li></ul>');
+			$.getJSON("/topics/21084", function(data) {
 				console.log(data);
 				$(data.messages).each(function(groups) {
-					$('#twitter ul').append('<li><div>' + this.date_created + ' : ' + this.message + '</div></li>');
+					$('#twitter ul').append('<li><div>' + this.message + '</div></li>');
 				});
 			});										
-		});					
-	});				
+		// });					
+	// });				
 }
+
+
+// $("#sidebar").ajaxError(function(e, xhr, settings, exception) {
+// 	$(this).text( 'error in: ' + settings.url + ' \n'+'error:\n' + xhr.responseText );
+// 	});
+
