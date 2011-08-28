@@ -1,18 +1,49 @@
+#holdall
+  #content_container
+    %article.person
+      %div.media
+        %img.img{:src=>"http://s3.amazonaws.com/madebymany.com/uploads/people/18/avatar_stuart_fullsize_original.gif?1308147007"}
+        %div.bdy
+          %header
+            %h1 Stuart Eccles
+          %p Stuart has a Masters Degree in Engineering and 10 years experience as a software engineer, technical architect and management consultant working on internal systems and large-scale websites and applications. In 2007 he founded Made by Many with Tim Malbon, William Owen and Isaac Pinnock to create a new type of agency – a social technology company that works more like a web start-up.
+          %p At Made by Many Stuart acts as the managing partner and lead technologist. He is an advocate of and frequent speaker on Agile project methodologies and Lean Manufacturing philosophies applied to the strategy, design and development of digital services and products and he contributes to a number of open source projects.</p>
 
-%div#content
-  %a{:href => '/conversations/feeds'}
-    %img{:src =>'/images/tmp.png'}
-  
-  %h1 Conversation Topics
-  
-  %div#sidebar
-    %ul#nav
-    %h3 Message
-    %form{:id=>"message", :method=>"post"}
-      %input{:name=>"message", :value=>""}
-      %input{:type=>"submit", :value=>"CHAT"}
+        %aside#person-feeds
+          %section#blog-feed
+            %div
+              %h2 MxM posts
+              %h4
+                %a{:href=>"/blog/were-hiring-a-financial-controller"} We're hiring: A Financial Controller
 
-  
-  %div#twitter  
+              %time{:datetime=>'2011-06-15 13:09:54 UTC'}
+                15 June 2011
+              %span.count 15
 
-  
+          %section#twitter-feed
+            %div
+              %h2 Twitter
+          %section#rss-feed
+            %div
+              %h2 Personal blog
+    %section#people-slider
+      %div.slider
+        %ul.slidelist
+          %li
+            %a
+              %img{:src=>"http://s3.amazonaws.com/madebymany.com/uploads/people/8/avatar_tim_slider.gif?1288168330"}
+
+%header#header
+  %a{:href=>"/"}
+    =image_tag "/images/mxmlogo.gif?1311867603"
+-#<nav>
+-#<ul class='inlinelist'>
+-#<li class='inactive'><a href="/">Home</a></li>
+-#<li class='inactive'><a href="/what-we-do">What we do</a></li>
+-#<li class='inactive'><a href="/clients">Clients</a></li>
+-#<li class='active'><a href="/people">People</a></li>
+-#<li class='inactive'><a href="/signals">Signals</a></li>
+-#<li class='inactive'><a href="/blog">Blog</a></li>
+-#<li class='inactive'><a href="/contact">Contact</a></li>
+-#</ul>
+-#</nav>

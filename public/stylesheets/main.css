@@ -1,81 +1,120 @@
+body, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html {
+  height: 100%; }
+
+body, input, button, textarea, select {
+  font-family: "ff-tisa-web-pro-1", Georgia, times, serif;
+  line-height: 1.35; }
+
 body {
-	font-family: 'Oswald',"Arial Narrow",Arial,Helvetica,sans-serif;
-	color: #685E58;
-}
+  background: url(/images/bg.gif) top center no-repeat #133753; }
 
-h1,h3, h4 { 
-	text-transform: uppercase;
-	font-size: 24px;
-	display: block;	
-	clear: both;
-	border-bottom: 1px solid #685E58;
-	padding: 10px 0 15px 0;
-}
+#holdall {
+  position: relative;
+  width: 960px;
+  margin: 0px auto;
+  padding-top: 100px;
+  padding-bottom: 150px; }
 
-h3 {
-	padding: 0;
-	border-bottom: 0;
-	font-size: 18px;
-}
+#content_container {
+  width: 960px;
+  background: white;
+  -moz-box-shadow: 0 0 10px #1f1f1f;
+  -webkit-box-shadow: 0 0 10px #1f1f1f;
+  box-shadow: 0 0 10px #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
 
-h4 {
-	font-size: 16px;
-	border: none;
-	padding: 0;
-}
+#header {
+  position: absolute;
+  top: 33px;
+  width: 960px;
+  -webkit-text-size-adjust: 150%; }
 
-#content {
-	width: 1125px;
-	margin: 30px auto;	
-}
+.person {
+  padding: 188px 0 0;
+  border-bottom: 1px solid #efefef; }
+  .person h1 {
+    margin: 0 0 5px 0;
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: normal;
+    padding: 0 20px 0 0; }
+  .person header {
+    padding: 0;
+    margin: 0 0 15px 0; }
+    .person header a {
+      font-size: 1.2em; }
+  .person .media {
+    margin-bottom: 30px; }
+    .person .media .img {
+      margin-right: 50px;
+      padding-left: 30px;
+      float: left; }
+    .person .media .bdy {
+      padding-right: 60px; }
 
-#sidebar {
-	width: 200px;
-	float: left;
-}
+#person-feeds {
+  border-top: 1px solid #efefef;
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+  clear: both;
+  padding: 0; }
+  #person-feeds #blog-feed img {
+    display: none; }
+  #person-feeds section {
+    width: 320px;
+    border-bottom: 1px solid #efefef;
+    background: url(/images/person-feeds-back.gif) top right repeat-y;
+    overflow: hidden;
+    float: left; }
+    #person-feeds section:hover {
+      background: url(/images/person-feeds-back.gif) top right repeat-y #f5fcfe; }
+  #person-feeds div {
+    padding: 25px 30px;
+    position: relative; }
+    #person-feeds div div {
+      padding: 0; }
+  #person-feeds h2 {
+    font-size: 2.133em;
+    margin-bottom: 20px; }
+  #person-feeds h4 {
+    color: #00adef;
+    margin-bottom: 14px; }
+    #person-feeds h4 a {
+      color: #00adef; }
+  #person-feeds p {
+    margin-bottom: 20px; }
+  #person-feeds time {
+    color: #999999;
+    font-size: 0.8em;
+    display: block;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-family: "ff-tisa-web-pro-1", Georgia, times, serif;
+    text-transform: none;
+    letter-spacing: normal; }
+  #person-feeds .cta {
+    color: #00adef; }
+    #person-feeds .cta:hover {
+      color: #4cc2ef; }
+  #person-feeds .count {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-family: "museo-sans-1", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.097em;
+    text-transform: uppercase;
+    font-size: 0.933em;
+    color: #8a8a8a; }
 
-#nav {
-	float: left;
-	width: 100%;
-	margin-bottom: 20px;	
-}
-
-#nav li {
-	background-color: #eee;
-	padding: 10px;
-	border-bottom: 1px solid #fff;
-}
-
-#twitter, #feeds {
-	border-bottom: 2px solid #685E58;
-	width: 900px;
-	height: 300px;
-	overflow: auto;
-	float: right;
-}
-
-#content img {
-	border-bottom: 2px solid #685E58;	
-}
-#twitter ul li, #feeds ul li {
-	border-bottom: 1px solid #685E58;
-	padding: 10px;
-}
-
-#twitter em {
-	display: block;
-	font-size: 11px;
-	font-style: normal;
-	text-align: right;
-	padding-right: 30px;
-}
-#twitter span {
-	font-style: italic;
-}
-form {
-	margin: 10px 0;
-}
-
-form input {
-	border: 1px solid #685E58;
-}
+#rss-feed h4 {
+  margin-bottom: 2px; }

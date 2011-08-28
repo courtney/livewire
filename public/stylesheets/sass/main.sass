@@ -1,0 +1,268 @@
+$font: "ff-tisa-web-pro-1",Georgia,times,serif
+$size: 12px
+$gray: #333333
+
+body, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary
+  display: block
+
+html
+  height: 100%
+
+body,input,button,textarea,select
+  font-family: $font
+  line-height: 1.35
+
+body
+  background: url(/images/bg.gif) top center no-repeat #133753
+
+#holdall
+  position: relative
+  width: 960px
+  margin: 0px auto
+  padding-top: 100px
+  padding-bottom: 150px
+
+#content_container
+  width: 960px
+  background: #fff
+  -moz-box-shadow: 0 0 10px #1f1f1f
+  -webkit-box-shadow: 0 0 10px #1f1f1f
+  box-shadow: 0 0 10px #1f1f1f
+  overflow: hidden
+  position: relative
+  z-index: 0
+
+#header
+  position: absolute
+  top: 33px
+  width: 960px
+  -webkit-text-size-adjust: 150%
+
+.person
+  padding: 188px 0 0
+  border-bottom: 1px solid #efefef
+  h1
+    margin: 0 0 5px 0
+    font-size: 3.2em
+    line-height: 1.1
+    font-weight: normal
+    padding: 0 20px 0 0
+  header
+    padding: 0
+    margin: 0 0 15px 0
+    a
+      font-size: 1.2em
+  .media
+    margin-bottom: 30px
+    .img
+      margin-right: 50px
+      padding-left: 30px
+      float: left
+    .bdy
+      padding-right: 60px
+
+#person-feeds
+  border-top: 1px solid #efefef
+  overflow: hidden
+  _overflow: visible
+  zoom: 1
+  clear: both
+  padding: 0
+  #blog-feed img
+    display: none
+  section
+    width: 320px
+    border-bottom: 1px solid #efefef
+    background: url(/images/person-feeds-back.gif) top right repeat-y
+    overflow: hidden
+    float: left
+    &:hover
+      background: url(/images/person-feeds-back.gif) top right repeat-y#f5fcfe
+  div
+    padding: 25px 30px
+    position: relative
+    div
+      padding: 0
+  h2
+    font-size: 2.1333em
+    margin-bottom: 20px
+  h4
+    color: #00adef
+    margin-bottom: 14px
+    a
+      color: #00adef
+  p
+    margin-bottom: 20px
+
+  time
+    color: #999
+    font-size: .8em
+    display: block
+    font-style: italic
+    margin-bottom: 20px
+    font-family: $font
+    text-transform: none
+    letter-spacing: normal
+  .cta
+    color: #00adef
+    &:hover
+      color: #4cc2ef
+  .count
+    position: absolute
+    top: 30px
+    right: 30px
+    font-family: 'museo-sans-1',Arial,Helvetica,sans-serif
+    letter-spacing: .0967em
+    text-transform: uppercase
+    font-size: .9333em
+    color: #8a8a8a
+
+#rss-feed h4
+  margin-bottom: 2px
+//
+//.people-list
+//padding: 0 5px
+//overflow: hidden
+//_overflow: visible
+//position: relative
+//zoom: 1
+//
+//.people-list li
+//padding: 20px
+//margin: 0
+//float: left
+//
+//.people-list.p1
+//clear: left
+//
+//.people-list.type
+//overflow: hidden
+//font-family: 'museo-sans-1',
+//Arial,
+//Helvetica,
+//sans-serif
+//letter-spacing: .0967em
+//text-transform: uppercase
+//color: #595959clear:leftfloat:none.people-list .type h2padding-left:7pxfont-size:.8667emfont-family:'museo-sans-1',Arial,Helvetica,sans-serifletter-spacing:.0967emtext-transform:uppercase# people-slider
+//height: 155px
+//background: #fff
+//border: 0
+//border-top: 1px solid#efefef
+//border-bottom: 1px solid#efefef
+//position: absolute
+//top: 0
+//width: 960px
+//margin: 0
+//
+//#people-slider.slider
+//height: 155px
+//
+//#people-slider ul
+//margin-left: 31px
+//padding: 15px 0
+//
+//#people-slider li
+//height: auto
+//padding: 5px 39px
+//
+//#people-slider.leftright
+//top: 42px
+//
+//.fn-head
+//padding: 30px-moz-box-shadow: none-webkit-box-shadow: none
+//box-shadow: none
+//
+//.fn-head p
+//color: #ccc
+//margin-bottom: 20px
+//
+//.fn-head.strapline
+//width: auto
+//float: none
+//margin-bottom: 35px
+//
+//.fn-head h1
+//width: auto
+//float: none
+//
+//.fn-head a
+//cursor: pointer
+//
+//.fn-body
+//width: 690px
+//float: left
+//
+//.fn-body.cta
+//color: #999
+//.fn-body .cta spancolor:# 00adef
+//font-family: 'ff-tisa-web-pro-1',
+//Georgia,
+//times,
+//serif
+//letter-spacing: 0
+//text-transform: none
+//font-size: 1.0667em
+//.fn-body.cta: hover span
+//color: #4cc2ef.fn-body h2font-size:1.6emmargin:5px 0 15px.fn-body .blog-postpadding-left:120pxmin-height:0.fn-body .blog-post .format imgmax-width:495pxheight:auto!important.fn-body .leftside imgmargin-left:-40pxwidth:130px.fn-body .report headerpadding-top:14pxmargin-bottom:14px.ie6 .fn-body .format imgwidth:495px.js .fn-bodypadding-top:20px.fn-contentpadding:30px 30px 50pxborder-bottom:1px solid # efefef
+//
+//.fn-content.meta span
+//font-size: .8667em
+//color: #fe3d3d
+//
+//.fn-content time
+//color: #999display:inline.fn-content .format imgmax-width:630pxheight:auto!important.fn-content .format objectmargin-bottom:20px.report h2font-size:2.5333em.report imgmargin-bottom:20px# flickr-feed ul
+//margin-bottom: 20px
+//
+//.field-note
+//background: url(/images/person-feeds-back.gif ? 1308757163) 690px 0 repeat-y
+//overflow: hidden
+//_overflow: visible
+//zoom: 1
+//position: relative
+//
+//.field-note.strapline
+//font-size: 1.3333em
+//
+//.field-note h1
+//margin-bottom: 6px
+//
+//.field-note.back
+//margin-bottom: 5px
+//
+//.field-note.fn-head
+//position: relative
+//padding-bottom: 72px
+//.field-note aside
+//width: 240px
+//float: right
+//font-size: .9333em
+//padding-top: 50px
+//color: #666
+//.field-note aside sectionmargin-bottom:25pxpadding-right:30px
+//.field-note aside pmargin:0
+//.field-note aside h3color:# 333
+//
+//.field-note.hashtag
+//background: url(/images/hash.gif ? 1308757163) center left no-repeat
+//padding: 0 0 3px 22px
+//
+//
+//#scrollFollow
+//width: 240px
+//
+//.scrolling
+//position: fixed
+//top: 20px
+//
+//.perched
+//position: absolute
+//bottom: 20px
+//top: auto
+//
+//.fn-active
+//background: #fbfbfb
+//

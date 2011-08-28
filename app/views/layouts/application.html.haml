@@ -1,11 +1,14 @@
 !!! 5
 %html
   %head
-    %title Forage SF - Vendor Connect
+    %title Live Wire
     = stylesheet_link_tag 'reset-min',
-                          'main'
+                          'http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/style.css',
+                          'http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/styles/default.css',
+                          'http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/custom.css',
+                          'users'
     = yield :stylesheets
     = csrf_meta_tag
-  %body
+  %body.home
     = yield   
     = render :partial => 'layouts/javascripts'

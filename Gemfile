@@ -8,6 +8,12 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 gem 'oauth'
 gem 'haml'
+gem 'sass'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

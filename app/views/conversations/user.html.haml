@@ -1,0 +1,89 @@
+#header
+  %div.box
+    #logo
+      %a{:href=>"#", :title=>"LiveWire Beta", :style=>"font-size: 32px; color: #fff;"} LiveWire
+%div.hrline
+
+%div.heading
+%div.box
+  %h2.rad.bags User1234
+
+
+#bottombox
+  %div.box{:style=>" overflow:hidden;"}
+    %div.speci <img class="bags" src="http://wpdemo.dannci.com/preview/02/wp-content/uploads/2011/05/Untitled-1.png" alt="Beatheme" />
+    %div.aboutus
+      %h3 Recent Updates
+      %ul#user_feed.basic_list
+        %li
+          %span.fb facebook
+          .ss Apr 17, 2011 - 3:30pm
+          Organic sustainable lomo, +1 irony McSweeney's skateboard Portland PBR tattooed farm-to-table Terry Richardson Williamsburg. Organic farm-to-table wolf, next level shit put a bird on it freegan American Apparel Williamsburg chambray gentrify viral you probably haven't heard of them keffiyeh
+        %li.recentcomments
+          %span.ig facebook
+          .ss Apr 17, 2011 - 11:45am
+          <img class="bags" src="http://distillery.s3.amazonaws.com/media/2011/08/15/f422e6afc1e748349024b563c9558dce_6.jpg"/>
+        %li.recentcomments Butcher Thundercats tofu
+        %li.recentcomments Wes Anderson
+        %li.recentcomments Sustainable
+
+
+    -#%div.aboutus But, by the best contradictory authorities, this Grecian story of Hercules and the whale is considered to be derived from the still more ancient Hebrew story of Jonah and the whale; and vice versa; certainly they are very similar. If I claim the demigod then, why not the prophet? Nor do heroes, saints, demigods, and prophets alone comprise the whole roll of our order. Our grand master is still to be named; for like royal kings of old times, we find the head waters of our fraternity in nothing short of the great gods themselves. But, by the best contradictory authorities, this Grecian story of Hercules and the whale is considered to be derived from the still more ancient Hebrew story.
+    %ul#social-menu
+      %li.socials_rs <a href="http://feeds.feedburner.com/beatheme"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_tw <a href="http://twitter.com/#!/dannci"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_fa <a href="#"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_ai <a href="#"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_la <a href="#"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_de <a href="http://dannci.deviantart.com/"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_tu <a href="http://wpmasters.org/"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+      %li.socials_vi <a href="#"><img alt="follow" src="http://wpdemo.dannci.com/preview/02/wp-content/themes/Echo/images/social_btn.gif" /></a>
+
+%div{:style=>"clear: both;"}
+%div.hrline
+
+#footer
+  %div.box
+    %div.foowidget
+      %h3 Covet
+      %div.textwidget Covet is a dating site where you see what users do real time via their online presences.
+    %div.foowidget
+      %h3 New Users
+      %ul
+        %li American Apparel
+        %li Pitchfork
+        %li Williamsburg
+        %li Keffiyeh
+
+    %div.foowidget2
+      %h3 Covet Twitter
+      %div{:style=>"clear: both;"}
+      %div{:class=>"lasttwit"}
+        %div{:class=>"tweets"}
+
+      :javascript
+        jQuery(document).ready(function($) {
+          $(".tweets").tweet({
+            join_text: "auto",
+            username: "chemphill",
+            avatar_size: 0,
+            count: 1,
+            auto_join_text_default: "",
+            auto_join_text_ed: "",
+            auto_join_text_ing: "",
+            auto_join_text_reply: "",
+            auto_join_text_url: "",
+            loading_text: "loading tweets..."
+          });
+        })
+  %div{:style=>"clear: both;"}
+
+  %div.box
+    #copyright.fl
+      %p &copy; 2011 Covet.
+    #credit.fr
+      %p See what's up
+
+
+
+
